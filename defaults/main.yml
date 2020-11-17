@@ -1,5 +1,8 @@
 ---
+memcached_exporter_version: 0.7.0
+memcached_exporter_binary_local_dir: ""
 memcached_exporter_web_listen_address: "0.0.0.0:9150"
+memcached_internal_address: "localhost:11211"
 
 # Internal variables
 _memcached_exporter_system_user: "memcached_exporter"
