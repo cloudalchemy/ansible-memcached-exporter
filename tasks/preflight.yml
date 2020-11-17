@@ -17,7 +17,7 @@
   tags:
     - memcached_exporter_install
 
-## NO VERSION IN MEMCACHED EXPORTER FOR NOW 
+## NO VERSION IN MEMCACHED EXPORTER FOR NOW
 #- name: Gather currently installed memcached_exporter version (if any)
 #  command: "{{ _memcached_exporter_binary_install_dir }}/memcached_exporter --version"
 #  args:
