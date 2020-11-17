@@ -18,17 +18,17 @@
     - memcached_exporter_install
 
 ## NO VERSION IN MEMCACHED EXPORTER FOR NOW
-#- name: Gather currently installed memcached_exporter version (if any)
-#  command: "{{ _memcached_exporter_binary_install_dir }}/memcached_exporter --version"
-#  args:
-#    warn: false
-#  changed_when: false
-#  register: __memcached_exporter_current_version_output
-#  check_mode: false
-#  when: __memcached_exporter_is_installed.stat.exists
-#  tags:
-#    - memcached_exporter_install
-#    - skip_ansible_lint
+# - name: Gather currently installed memcached_exporter version (if any)
+#   command: "{{ _memcached_exporter_binary_install_dir }}/memcached_exporter --version"
+#   args:
+#     warn: false
+#   changed_when: false
+#   register: __memcached_exporter_current_version_output
+#   check_mode: false
+#   when: __memcached_exporter_is_installed.stat.exists
+#   tags:
+#     - memcached_exporter_install
+#     - skip_ansible_lint
 
 - block:
     - name: Get latest release
