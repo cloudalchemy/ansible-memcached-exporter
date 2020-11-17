@@ -20,6 +20,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
 | `memcached_exporter_web_listen_address` | "0.0.0.0:9150" | Address on which memcached-exporter will listen |
+| `memcached_internal_address` | "localhost:11211" | Address on which memcached itself is running |
 
 ## Example
 
