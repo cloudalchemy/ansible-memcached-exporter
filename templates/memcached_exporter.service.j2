@@ -10,7 +10,7 @@ StartLimitIntervalSec=0
 Type=simple
 User={{ _memcached_exporter_system_user }}
 Group={{ _memcached_exporter_system_group }}
-ExecStart=/usr/local/bin/memcached_exporter
+ExecStart={{ _memcached_exporter_binary_install_dir }}/memcached_exporter --memcached.address={{ memcached_address }} --web.listen-address={{ memcached_exporter_web_listen_address }}
 SyslogIdentifier=memcached_exporter
 Restart=always
 RestartSec=5
