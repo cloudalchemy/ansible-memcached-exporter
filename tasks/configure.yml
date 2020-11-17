@@ -1,0 +1,9 @@
+---
+- name: Copy the memcached_exporter systemd service file
+  template:
+    src: memcached_exporter.service.j2
+    dest: /etc/systemd/system/memcached_exporter.service
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart memcached_exporter

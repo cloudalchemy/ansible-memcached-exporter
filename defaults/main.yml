@@ -1,0 +1,6 @@
+---
+memcached_exporter_web_listen_address: "0.0.0.0:9150"
+
+# Internal variables
+_memcached_exporter_system_user: "memcached_exporter"
+_memcached_exporter_system_group: "memcached_exporter"
